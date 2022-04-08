@@ -44,7 +44,7 @@ $genel_isim = $db->query("SELECT * FROM genel WHERE tur='isim'")->fetch(PDO::FET
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Products
+								Ürünler
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="#products">Meyveler</a></li>
@@ -52,7 +52,7 @@ $genel_isim = $db->query("SELECT * FROM genel WHERE tur='isim'")->fetch(PDO::FET
 								<li><a class="dropdown-item" href="#products">Baklagiller</a></li>
 								<li><a class="dropdown-item" href="#products">Baharatlar</a></li>
 								<li><hr class="dropdown-divider bg-white"></li>
-								<li><a class="dropdown-item text-info" href="#products">All</a></li>
+								<li><a class="dropdown-item text-info" href="#products">Tümü</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
