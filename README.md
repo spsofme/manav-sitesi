@@ -12,3 +12,5 @@ Kurulumu yaptıktan sonra admin panele girmek için 'sunucuadi/admin/index.php' 
 </ul>
 
 ## Ekran görüntüleri
+![Site giriş ekranı](https://github.com/spsofme/manav-sitesi/blob/main/site.png) <br>
+![Admin panel](https://github.com/spsofme/manav-sitesi/blob/main/adminpanel.png)
