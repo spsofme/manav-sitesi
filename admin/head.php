@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 include '../assets/db.php';
 
 if (! isset($_SESSION['login'])) {
