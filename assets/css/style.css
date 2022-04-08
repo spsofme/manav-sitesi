@@ -1,0 +1,273 @@
+/********************************** START: OTHER **********************************/
+
+/* screen for large */
+@media screen and (max-width: 991px) {
+}
+
+/********************************** END: OTHER **********************************/
+
+
+
+/********************************** START: NAVBAR **********************************/
+
+.navbar {
+	background-color: transparent;
+	font-size: 1.3em;
+	font-family: 'Montserrat', sans-serif;
+	transition: all 0.2s ease;
+}
+
+.nav-scroll {
+	background-color: black;
+	font-size: 1.28em;
+	box-shadow: .5px 0px 3px;
+}
+
+.navbar-brand {
+	width: 7rem;
+}
+
+.nav-item.dropdown .dropdown-menu {
+	background-color: rgba(0, 0, 0, .8);
+	border: 1px solid white;
+}
+
+.navbar-nav .nav-item {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.navbar-nav .nav-item:after {
+	margin-left: auto;
+	margin-right: auto;
+	content: "";
+	display: block;
+	height: 3px;
+	width: 0px;
+	background-color: #0dcaf0;
+	transition: all .5s ease;
+}
+
+.navbar-nav .nav-item:hover:after {
+	width: 100%;
+}
+
+.nav-item.dropdown .dropdown-menu li .dropdown-item:hover {
+	background-color: rgba(13, 202, 240, .5);
+}
+.nav-item.dropdown .dropdown-menu li:last-child .dropdown-item:hover {
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.nav-item.dropdown .dropdown-menu li .dropdown-item {
+	text-align: center;
+	color: white;
+}
+
+.nav-icon {
+	display: none;
+	color: white !important;
+}
+
+
+@media screen and (min-width: 992px) {
+	.navbar-collapse .navbar-brand {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.navbar-brand {
+		width: 6rem;
+	}
+
+	.nav-icon {
+		display: block;
+		width: 2rem;
+		cursor: pointer;
+	}
+
+	.navbar-collapse {
+		position: absolute;
+		display: none;
+		background-color: black;
+		top: 0px;
+		left: 0px;
+		height: 100vh;
+		width: 0px;
+		transition: all .5s ease-in-out;
+		box-shadow: 0px .5px 5px;
+	}
+
+	.navbar-collapse.active {
+		display: flex !important;
+		flex-direction: column;
+		padding-top: 2rem;
+		width: 55%;
+	}
+
+	.navbar-nav {
+		margin-right: auto !important;
+		margin-left: auto !important;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.navbar-nav .nav-item:after {
+		margin-left: 0px !important;
+	}
+
+	.navbar-collapse .navbar-brand {
+		top: 0px;
+		left: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/********************************** END: NAVBAR **********************************/
+
+
+
+/********************************** START: MAIN **********************************/
+
+.main {
+	background-color: white;
+}
+
+.home {
+	display: flex;
+	background-image: url('../images/bg.jpg');
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.home-text {
+	align-self: center;
+	text-align: center;
+	width: 100%;
+}
+
+.home-text h1 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 3.5em;
+	color: white;
+}
+
+.home-text h3 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 2em;
+	color: rgb(190, 190, 190);
+}
+
+.about {
+	color: black;
+}
+
+.about > div > h1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	display: block;
+	margin: 0px auto 2rem auto;
+	text-align: center;
+}
+
+.card {
+	background-color: transparent !important;
+	padding: 1rem;
+}
+
+.my-card-img {
+	padding: 2rem;
+	border-right: 2px solid #0dcaf0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.my-card-img > * {
+	max-height: 10rem;
+}
+
+#products h1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	display: block;
+	margin: 2rem auto 2rem auto;
+	text-align: center;
+}
+
+#nav-tab .nav-link {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#nav-tabContent div .container-fluid .row .card {
+	border-radius: 0px;
+}
+
+#nav-tabContent div .container-fluid .row .card img {
+	height: 12rem;
+	width: auto;
+}
+
+#nav-tabContent div .container-fluid .row .card .card-body .card-title {
+	color: #0dcaf0;
+}
+
+@media screen and (max-width: 991px) {
+	.my-card-img {
+		padding: 2rem;
+		border-right-width: 0px;
+		border-bottom: 2px solid #0dcaf0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/********************************** END: MAIN **********************************/
+
+
+
+/********************************** START: FOOTER **********************************/
+
+.footer {
+	background-color: rgba(0, 0, 0, .9);
+	color: white;
+}
+.footer .row .card {
+	border: none;
+}
+.contact {
+	color: white;
+	text-decoration: none;
+}
+.contact:hover {
+	color: #0dcaf0aa;
+}
+.contact:hover svg {
+	color: #0dcaf0;
+}
+.contact svg {
+	width: 1rem;
+}
+
+.developer {
+	text-decoration: none;
+	color: white;
+	border-left: 3px solid #0dcaf0;
+	margin-left: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	transition: color .2s ease;
+}
+
+.developer:hover {
+	color: white;
+	text-shadow: 0px 0px 1px;
+	background-color: #0dcaf033;
+}
+
+/********************************** END: FOOTER **********************************/
