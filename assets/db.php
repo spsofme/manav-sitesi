@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'manav';
 $username = 'root';
-$password = '123456789Fa';
+$password = '';
 
 try {
 	$db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
